@@ -43,7 +43,7 @@ export const HomePage: React.FC = () => {
             const response = await axios.get(API_URL, {
                 headers: { Authorization: `Bearer ${token}` }
             });
-            console.log(response.data);
+            
             setTasks(response.data);
             setError(null);
         } catch (err) {

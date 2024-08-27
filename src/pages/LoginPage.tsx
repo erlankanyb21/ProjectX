@@ -26,14 +26,13 @@ export const LoginPage: React.FC = () => {
       localStorage.setItem('refreshToken', refresh);
 
       console.log('Успешная авторизация!');
-      console.log(access, refresh);
+     
       navigateToHome();
       setError(null);
     } catch (err) {
       setError('');
       setTimeout(() => setError('Ошибка авторизации. Проверьте логин и пароль.'), 10);
       console.error('Ошибка авторизации:', err);
-      console.log(username, password);
     }
   };
 
