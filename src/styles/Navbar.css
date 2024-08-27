@@ -1,0 +1,49 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: rgba(226, 221, 221, 0.8);
+    /* Полупрозрачный светло-серый фон */
+    backdrop-filter: blur(3px);
+    /* Эффект размытия */
+    color: #333;
+    /* Темно-серый текст */
+    border-radius: 14px;
+    /* Скругленные углы */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Легкая тень */
+    position: sticky;
+    /* Делает навбар липким */
+    top: 0;
+    /* Прикрепляет навбар к верхней части экрана */
+    z-index: 1000;
+    /* Устанавливает приоритет отображения над другими элементами */
+}
+
+.logo img {
+    height: 40px;
+    /* Высота логотипа */
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+    /* Отступ между ссылками */
+}
+
+.navbar-links a {
+    color: #333;
+    /* Темно-серый текст для ссылок */
+    text-decoration: none;
+    padding: 5px 10px;
+    /* Отступ для ссылок */
+    border-radius: 4px;
+    /* Скругленные углы */
+    transition: background-color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    background-color: rgba(200, 200, 200, 0.3);
+    /* Цвет при наведении */
+}
